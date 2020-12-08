@@ -18,7 +18,7 @@ public class SqAreaTest {
     @Test
     public void when41then1() {
         int expected = 1;
-        int p = 4;
+        int p = 6;
         int k = 1;
         double out = SqArea.square(p, k);
         Assert.assertEquals(expected, out, 0.01);
