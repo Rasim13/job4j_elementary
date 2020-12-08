@@ -16,7 +16,7 @@ public class SqAreaTest {
     }
 
     @Test
-    public void when41then1() {
+    public void when61then1() {
         int expected = 1;
         int p = 6;
         int k = 1;
