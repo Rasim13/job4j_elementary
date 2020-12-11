@@ -7,8 +7,6 @@ public class DummyBot {
             rsl = "Привет, умник";
         } else if ("Пока.".equals(question)) {
             rsl = "До скорой встречи";
-        } else {
-            System.out.println(rsl);
         }
         return rsl;
     }
@@ -19,5 +17,7 @@ public class DummyBot {
         rsl = DummyBot.answer("Пока.");
         System.out.println(rsl);
         rsl = DummyBot.answer("Сколько будет 2 + 2?");
+        System.out.println(rsl);
+
     }
 }
