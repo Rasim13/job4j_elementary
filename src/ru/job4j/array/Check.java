@@ -11,7 +11,7 @@ public class Check {
                 result = false;
             }
          }
-        if (count == data.length) {
+        if (count - data.length == 0) {
             return result;
         } else {
             result = false;
