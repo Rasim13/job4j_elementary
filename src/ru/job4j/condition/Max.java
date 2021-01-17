@@ -2,12 +2,15 @@ package ru.job4j.condition;
 
 public class Max {
 
-    public static int findMax(int left, int right) {
-        return  (left > right) ? left : right;
+    public static int findMax(int first, int second) {
+        return  (first > second) ? first : second;
     }
 
-    public static void main(String[] args) {
-        int result = Max.findMax(5, 5);
-        System.out.println(result);
+    public static int findMax(int first, int second, int third) {
+        return findMax(first, findMax(second, third));
+    }
+
+    public static int findMax(int first, int second, int third, int fourth) {
+        return findMax(first, findMax(second, third), findMax(third, fourth));
     }
 }
