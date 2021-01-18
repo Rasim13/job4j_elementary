@@ -11,6 +11,6 @@ public class Max {
     }
 
     public static int findMax(int first, int second, int third, int fourth) {
-        return findMax(first, findMax(second, third), findMax(third, fourth));
+        return findMax(first, findMax(second, third, fourth));
     }
 }
