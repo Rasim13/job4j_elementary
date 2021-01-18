@@ -3,15 +3,18 @@ package ru.job4j.condition;
 public class AttackRook {
     public static boolean check(String left, String right) {
         boolean rsl = false;
-        char firstSymbol = left.charAt(0);
-        char secondSymbol = right.charAt(0);
-        char thirdSymbol = left.charAt(1);
-        char fourthSymbol = right.charAt(1);
-        if (firstSymbol == secondSymbol) {
-            rsl = true;
-        } else if (thirdSymbol == fourthSymbol) {
-            rsl = true;
+        char[] ch = new char[left.length()];
+        char[] ch1 = new char[right.length()];
+        for (int i = 0; i < left.length(); i++) {
+            ch[i] = left.charAt(i);
+            ch1[i] = right.charAt(i);
         }
-        return rsl;
+        for (int i = 0; i < left.length(); i++) {
+            if (ch[i] == ch1[i]) {
+                rsl = true;
+            }
+        }
+
+            return rsl;
     }
 }
